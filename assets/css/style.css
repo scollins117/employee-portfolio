@@ -1,0 +1,154 @@
+/* main style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+:root {
+    --primary-color: #181064;
+    --secondary-color: #887694;
+}
+
+/* put body style here */
+
+/* header and nav styles */
+header {
+    padding: 20px 35px;
+    background-color:var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* put text styles here */
+
+/* hero style */
+.hero {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+}
+
+.hero h2 {
+    display: inline-flex;
+    font-size: 24px;
+    float: right;
+    margin-top: 220px;
+    margin-right: 60px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.float-left {
+    float: left;
+    width: 25%;
+}
+
+.right {
+    display: inline-block;
+    width: 75%;
+}
+
+/* main styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    background-size: cover;
+    justify-content: space-evenly;
+}
+
+.about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.about-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+}
+
+.about-heading {
+    font-size: 36px;
+    grid-row: 1 / span 4;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 5px solid var(--secondary-color);
+}
+
+.about-paragraph {
+   grid-column: 2 / span 4;
+   grid-row: 1 / span 3; 
+   padding-left: 10px;
+}
+
+.work-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.work-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 10px;
+}
+
+.work-heading {
+    font-size: 36px;
+    grid-row: 1 / span 9;
+    text-align: left;
+    padding-right: 10px;
+    border-right: 5px solid var(--secondary-color);
+}
