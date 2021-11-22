@@ -90,6 +90,12 @@ header nav ul a {
     width: 75%;
 }
 
+.flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+
 /* main styles */
 main {
     display: flex;
@@ -99,12 +105,20 @@ main {
     justify-content: space-evenly;
 }
 
-.about-wrap {
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: center;
-    margin-top: 50px;
+    margin: 20px 50px;
+    width: 90%;
+    align-items: center;
+}
+
+.section-title {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
 }
 
 .about-grid {
@@ -134,7 +148,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px 50px;
+    align-items: center;
 }
 
 .work-grid {
