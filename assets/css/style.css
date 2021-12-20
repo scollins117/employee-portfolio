@@ -153,7 +153,8 @@ main {
 }
 
 .work-grid {
-    width: 75%;
+    width: 25%;
+    align-items: flex-start;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: repeat(10, 1fr);
@@ -166,4 +167,15 @@ main {
     text-align: left;
     padding-right: 10px;
     border-right: 5px solid var(--secondary-color);
+}
+
+.work-example {
+    background-color: var(--lightskyblue);
+    position: relative;
+    line-height: 1.5;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5%;
+    opacity: .8;
+    background-image: url("../images/movie-theater-gf01c482e1_1920.jpg");
 }
