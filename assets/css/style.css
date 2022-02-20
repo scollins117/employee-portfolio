@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
+    padding: 20px;
     top: 0;
     z-index: 9999;
 }
@@ -30,15 +31,17 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    padding: 10px;
+    border: 5px solid black;
 }
 
 header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 10px 0;
 }
 
 header nav ul {
@@ -49,12 +52,11 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul a {
-    padding: 10px 15px;
+header nav ul li a {
+    padding: 8px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
     font-weight: bold;
-    font-size: 1.55vw;
-    color: var(--secondary-color);
-    text-decoration: underline;
 }
 
 /* put text styles here */
@@ -80,102 +82,103 @@ header nav ul a {
     color: var(--primary-color);
 }
 
-.float-left {
-    float: left;
-    width: 25%;
+.title {
+    border-right: 5px solid var(--primary-color);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
 }
 
-.right {
-    display: inline-block;
-    width: 75%;
+.title h2 {
+    font-size: 48px;
 }
 
-.flex-left {
+.about-me {
     display: flex;
-    justify-content: left;
-}
-
-
-/* main styles */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aliceblue;
-    background-size: cover;
-    justify-content: space-evenly;
-}
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    justify-content: center;
-    margin: 20px 50px;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
     width: 90%;
-    align-items: center;
 }
 
-.section-title {
-    width: 100%;
-    text-align: right;
-    font-weight: bold;
-}
-
-.about-grid {
-    width: 75%;
-    display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px 10px;
-}
-
-.about-heading {
-    font-size: 36px;
-    grid-row: 1 / span 4;
-    text-align: right;
-    padding-right: 10px;
-    border-right: 5px solid var(--secondary-color);
-}
-
-.about-paragraph {
-   grid-column: 2 / span 4;
-   grid-row: 1 / span 3; 
-   padding-left: 10px;
-}
-
-.work-wrap {
+.work {
+    padding: 30px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.work h2 {
+    color: var(--secondary);
+}
+
+.work-wrapper {
+    width: 80%;
+    height: 500px;
+    display: flex;
     justify-content: center;
-    margin-top: 20px 50px;
-    align-items: center;
 }
 
 .work-grid {
-    width: 25%;
-    align-items: flex-start;
+    width: 70%;
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 10px 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
 }
 
-.work-heading {
-    font-size: 36px;
-    grid-row: 1 / span 9;
-    text-align: left;
-    padding-right: 10px;
-    border-right: 5px solid var(--secondary-color);
+.project {
+    border: solid;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
 }
 
-.work-example {
-    background-color: var(--lightskyblue);
-    position: relative;
-    line-height: 1.5;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 5%;
-    opacity: .8;
+.run-buddy {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+}
+
+.password-generator{
+    background-image: url("../images/robo-glad.jfif");
+    background-position: 50% 15%;
+}
+
+.workday-schedule {
+    background-image: url("../images/sched.png");
+    background-position: 60% 50%;
+}
+
+.film-feast {
     background-image: url("../images/movie-theater-gf01c482e1_1920.jpg");
+    background-position: 50% 15%;
+}
+
+.project-management {
+    background-image: url("../images/overseer.jpg");
+    background-position: 50% 15%;
+}
+
+.content-wrap {
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    width: 60%;
 }
